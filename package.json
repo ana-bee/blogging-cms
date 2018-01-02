@@ -16,7 +16,13 @@
     "url": "https://github.com/ana-bee/blogging-cms/issues"
   },
   "homepage": "https://github.com/ana-bee/blogging-cms#readme",
-  "dependencies": {
-    "express": "^4.16.2"
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "latest"
   }
 }
