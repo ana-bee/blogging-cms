@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'sass',
                     src: ['**/*.scss'],
-                    dest: 'css',
+                    dest: 'public/css',
                     ext: '.css'
                 }]
             }
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: 'css/style.css'
+                src: 'public/css/style.css'
             }
         },
 
@@ -41,9 +41,9 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: 'css',
+                        cwd: 'public/css',
                         src: ['*.css', '!*.min.css'],
-                        dest: 'css',
+                        dest: 'public/css',
                         ext: '.min.css'
                     }
                 ]
@@ -53,8 +53,8 @@ module.exports = function (grunt) {
         // Begin JS Uglify plugin
         uglify: {
             build: {
-                src: ['src/*.js'],
-                dest: 'js/script.min.js'
+                src: ['public/js/*.js'],
+                dest: 'public/js/script.min.js'
             }
         },
 
