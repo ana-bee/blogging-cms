@@ -23,13 +23,13 @@ app.listen(app.get('port'), function() {
 
 // ROUTES
 app.get('/', function(req, res) {
-    res.render('welcome');
+    res.render('welcome-page');
 });
 
 app.get('/user', function(req, res) {
-    res.render('users/profile');
+    res.render('users/view-user-profile');
 });
 
 app.get('/posts/post', function(req, res) {
-    res.render('posts/single-post');
+    res.render('posts/view-single-post');
 });
