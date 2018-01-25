@@ -19,3 +19,17 @@ app.set('view engine', 'handlebars');
 app.listen(app.get('port'), function() {
     console.log('Blogging CMS started on http://localhost:' + app.get('port'));
 });
+
+
+// ROUTES
+app.get('/', function(req, res) {
+    res.render('welcome');
+});
+
+app.get('/user', function(req, res) {
+    res.render('users/profile');
+});
+
+app.get('/posts/post', function(req, res) {
+    res.render('posts/single-post');
+});
