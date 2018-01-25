@@ -16,20 +16,9 @@ app.set('view engine', 'handlebars');
 //     file
 // });
 
+// Loads main router
+app.use(require('./controllers/index'));
+
 app.listen(app.get('port'), function() {
     console.log('Blogging CMS started on http://localhost:' + app.get('port'));
-});
-
-
-// ROUTES
-app.get('/', function(req, res) {
-    res.render('welcome-page');
-});
-
-app.get('/user', function(req, res) {
-    res.render('users/view-user-profile');
-});
-
-app.get('/posts/post', function(req, res) {
-    res.render('posts/view-single-post');
 });
